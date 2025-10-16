@@ -1,0 +1,21 @@
+### Create new user
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username": "Venezuelana",
+    "name": "jhonatan",
+    "password": "12345678910",
+    "Rol": "admin"
+}
+
+### Create new contact
+POST http://localhost:3001/api/contacts
+Content-Type: application/json
+
+{
+    "name": "Juan Pérez",
+    "number": "123456789",
+    "email": "juan@mail.com",
+    "comments": "Comentario de prueba"
+}

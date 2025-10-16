@@ -1,0 +1,54 @@
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username": "Venecia",
+    "password": "12345678910"
+}
+
+### Crear tarea con preguntas y opciones
+POST http://localhost:3003/api/tareas
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1... // Pegar aquí el token del login
+
+{
+    "titulo": "Cuestionario de Matemáticas",
+    "descripcion": "Examen básico de matemáticas",
+    "fechaLimite": "2024-08-23",
+    "preguntas": [
+        {
+            "pregunta": "¿Cuánto es 2 + 2?",
+            "opciones": [
+                {
+                    "texto": "3",
+                    "esCorrecta": false
+                },
+                {
+                    "texto": "4",
+                    "esCorrecta": true
+                },
+                {
+                    "texto": "5",
+                    "esCorrecta": false
+                }
+            ]
+        },
+        {
+            "pregunta": "¿Cuánto es 5 x 5?",
+            "opciones": [
+                {
+                    "texto": "15",
+                    "esCorrecta": false
+                },
+                {
+                    "texto": "25",
+                    "esCorrecta": true
+                },
+                {
+                    "texto": "35",
+                    "esCorrecta": false
+                }
+            ]
+        }
+    ]
+}

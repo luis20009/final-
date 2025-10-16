@@ -1,0 +1,33 @@
+.message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+}
+
+.message.error {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #f87171;
+}
+
+.message.success {
+  background-color: #dcfce7;
+  color: #16a34a;
+  border: 1px solid #4ade80;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

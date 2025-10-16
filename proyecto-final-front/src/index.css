@@ -1,0 +1,47 @@
+.messagesuccess {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #22c55e;
+  color: white;
+  border: 1px solid #15803d;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  z-index: 1000;
+  opacity: 1;
+  animation: fadeOut 5s forwards;
+}
+
+.messageerror {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ef4444;
+  color: white;
+  border: 1px solid #b91c1c;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  z-index: 1000;
+  opacity: 1;
+  animation: fadeOut 5s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
